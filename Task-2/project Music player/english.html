@@ -1,0 +1,162 @@
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/payment.css">
+    <title>Spotify</title>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      <h4>My music</h4>
+    </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="index.html">
+              <span class="fa fa-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="telugu songs.html">
+              <span class="fa fa-music"></span>
+              <span>Telugu songs</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="hindi songs.html">
+              <span class="fa fas fa-music"></span>
+              <span>Hindi songs</span>
+            </a>
+          </li>
+          <li>
+            <a href="english.html">
+              <span class="fa fas fa-music"></span>
+              <span>English songs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+              <span type="span" onclick="myF()">Create a playlist</span>
+                <script>
+                  function myF() {
+                    alert("Get Premium to create a playlist");
+                  }
+                  </script>
+            
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="policies">
+        <ul>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left" onclick="history.back()"></button>
+          <button type="button" class="fa fas fa-chevron-right" onclick="history.forward()"></button>
+        </div>
+
+        <div class="navbar">
+          <ul>
+            <li>
+              <div class="ct">
+                <button type="submit" class="btn" onclick="openPopup()">Preminum</button>
+              </div>
+            <div class="popup" id="popup">
+              <div class="co">
+                <btn type="btn-close" onclick="closePopup()">&times;</btn>
+              </div>
+              <h3>premium plans</h3>
+                <img src="WhatsApp Image 2024-05-27 at 16.04.35_955b4ab8.jpg">
+                    <button type="button" onclick="myFunction()">Go for premium</buttton>
+                      <script>
+                        function myFunction() {
+  alert("Premium plan are Coming in next updates");
+}
+                        let popup = document.getElementById("popup");
+                        function openPopup(){
+                         popup.classList.add("open-popup");  
+                        }
+                        function closePopup(){
+                         popup.classList.remove("open-popup");
+                        }
+                     </script>
+            </div>
+            </li>
+      
+          </ul>
+        </div>
+      </div>
+
+      <div class="spotify-playlists">
+        <h2>My Music Playlists</h2>
+
+        <div class="list">
+          <div class="item">
+            
+            <a href="song1.html"> <img src="english/artworks-000159131016-2vwts4-t500x500.jpg"></a>
+            <div class="play">
+            </div>
+            <h4>Faded</h4>
+            <p>Alan Walker</p>
+            
+          </div>
+        </div>
+        <div class="list">
+            <div class="item">
+              <a href="song2.html"><img src="english/783_7.webp"></a>
+              <div class="play">
+                 
+              </div>
+              <h4>See You Again</h4>
+            <p>Wiz Khalifa</p>
+        </div>
+        </div>
+        <div class="list">
+            <div class="item">
+              <a href="song3.html"><img src="english/size_m.jpg"></a>
+              <div class="play">
+              </div>
+              <h4>Killers From The Northside</h4>
+            <p>kordhell</p>
+          </div>
+        </div>
+          <div class="list">
+            <div class="item">
+              <a href="song4.html"><img src="english/27_4.jpg"></a>
+              <div class="play">
+  
+              </div>
+              <h4>On my way</h4>
+            <p>Alan Walker</p>
+          </div>
+          </div>
+          </div>
+
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
